@@ -14,11 +14,6 @@ const router = createRouter({
       component: () => import('../views/GameView.vue'),
     },
     {
-      path: '/initiative',
-      name: 'initiative',
-      component: () => import('../views/InitiativeView.vue'),
-    },
-    {
       path: '/action',
       name: 'action',
       component: () => import('../views/ActionCard.vue'),

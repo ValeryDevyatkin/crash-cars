@@ -1,16 +1,22 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <nav>
-    <RouterLink to="/">Main</RouterLink>
-    <RouterLink to="/game">Game</RouterLink>
-    <RouterLink to="/initiative">Initiative</RouterLink>
-    <RouterLink to="/action">Action</RouterLink>
-  </nav>
-
-  <RouterView />
+  <div class="app-root">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app-root {
+  height: 100%;
+}
+
+.app-root div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+</style>
