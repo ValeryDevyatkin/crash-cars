@@ -18,7 +18,7 @@ function populateActionCards() {
         'Запусти колесо вместо машинки.',
         'Потом убери колесо с поля.',
       ],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/metal-disk.jpg',
     },
     {
       title: 'Не такой как все',
@@ -27,7 +27,7 @@ function populateActionCards() {
         'Твоя текущая машинка полностью убирается из игры.',
         'Вместо нее возьми секретный транспорт.',
       ],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/secret.jpg',
     },
     {
       title: 'Эффект бабочки',
@@ -38,31 +38,31 @@ function populateActionCards() {
         'Ты не получишь очков.',
         'Возьми эту же машинку и запусти ее еще раз по обычным правилам.',
       ],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/timelapse.jpg',
     },
     {
       title: 'Работа не волк',
       artText: 'Рабочий перепутал время и пришел подготавливать поле к игре.',
       actionText: ['Верни на поле все упавшие базовые препятствия.'],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/road-worker.jpg',
     },
     {
       title: 'Машины в розыске',
       artText: 'Организаторы не смогли договориться с приемщиком автохлама.',
       actionText: ['Верни на поле все упавшие машинки.', 'Положи их вверх ногами.'],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/breaking-law.jpg',
     },
     {
       title: 'Хитрец',
       artText: 'Ты подкупаешь организаторов, чтобы получить преимущество.',
       actionText: ['Запусти машинку с любой стороны.'],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/money.jpg',
     },
     {
       title: 'Эколог',
       artText: 'В отличие от других игроков ты заботишься об окружающей среде.',
       actionText: ['Посади лес.', 'Деревья должны находится в небольшом воображаемом квадрате.'],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/trees.jpg',
     },
     {
       title: 'Техосмотр',
@@ -71,20 +71,20 @@ function populateActionCards() {
         'Пропусти ход.',
         'В конце игры ты запустишь оставшуюся машинку по обычным правилам.',
       ],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/station.jpg',
     },
     {
       title: 'KFC',
       artText: 'У кого-то из участников из окна автомобиля выпал баскет с острыми крылышками.',
       actionText: ['Брось горсть курочек в центр поля.'],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/chikens.jpg',
     },
     {
       title: 'Секретные материалы',
       artText:
         'Пришельцы похитили самую грязную рухлядь, чтобы проверить на ней свой новый шампунь. Вскоре машина упала с неба недалеко от игрового поля.',
       actionText: ['Убери с поля любую машинку.', 'Она считается упавшей.'],
-      imageUrl: 'TODO',
+      imageUrl: '/src/assets/action-cards/aliens.jpg',
     },
   ]
 }
