@@ -14,8 +14,10 @@
   --font-color: black;
   --border-color: black;
   --button-background-color: rgba(254, 93, 3, 0.7);
-  --plate-background-color: rgba(47, 111, 76, 0.8);
-  --red-background-color: rgba(252, 228, 14, 0.8);
+  --plate-background-color: rgba(248, 234, 231, 0.7);
+  --card-heading-background-color: rgba(252, 228, 14, 0.8);
+  --ok-background-color: rgba(0, 255, 0, 0.7);
+  --alert-background-color: rgba(255, 0, 0, 0.7);
 }
 
 html,

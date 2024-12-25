@@ -50,7 +50,7 @@ function goBack() {
 .action-card-heading {
   padding: var(--large-gap);
   border: var(--border-thickness) solid var(--border-color);
-  background: var(--red-background-color);
+  background: var(--card-heading-background-color);
 }
 
 .action-card-text-container {
