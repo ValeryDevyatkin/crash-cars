@@ -2,7 +2,7 @@
 import YesNoConfirmation from '@/components/YesNoConfirmation.vue'
 import router from '@/router'
 import { useGameStore } from '@/stores/game-store'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const gameStore = useGameStore()
 const isPlayerOrderConfirmation = ref(false)
@@ -26,6 +26,12 @@ function goToActionCard() {
   gameStore.selectActionCard()
   router.push('/action')
 }
+
+onMounted(() => {
+  if (!gameStore.isGameConsistent) {
+    router.replace('/')
+  }
+})
 </script>
 
 <template>

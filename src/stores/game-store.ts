@@ -94,6 +94,7 @@ function getRandomNumber(count: number) {
 }
 
 export const useGameStore = defineStore('game-store', () => {
+  const isGameConsistent = ref(false)
   const playerCount = ref(0)
   const playerOrders = ref<number[]>([])
   const selectedActionCard = ref<ActionCardProps | null>(null)
@@ -101,6 +102,7 @@ export const useGameStore = defineStore('game-store', () => {
   const actionCardCount = computed(() => actionCards.value.length)
 
   const setPlayerCount = function (count: number) {
+    isGameConsistent.value = true
     playerCount.value = count
   }
 
@@ -131,6 +133,7 @@ export const useGameStore = defineStore('game-store', () => {
   }
 
   const resetGame = function () {
+    isGameConsistent.value = false
     playerCount.value = 0
     playerOrders.value = []
     selectedActionCard.value = null
@@ -138,6 +141,7 @@ export const useGameStore = defineStore('game-store', () => {
   }
 
   return {
+    isGameConsistent,
     playerOrders,
     selectedActionCard,
     actionCardCount,

@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import router from '@/router'
 import { useGameStore } from '@/stores/game-store'
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 
 const gameStore = useGameStore()
+const canClose = ref(false)
 
 const backroundStyle = computed(() => {
   const imageUrl = gameStore.selectedActionCard?.imageUrl
@@ -14,8 +15,20 @@ const backroundStyle = computed(() => {
 })
 
 function goBack() {
+  if (!canClose.value) {
+    return
+  }
+
   router.back()
 }
+
+onMounted(() => {
+  if (gameStore.isGameConsistent) {
+    setTimeout(() => (canClose.value = true), 5000)
+  } else {
+    router.replace('/')
+  }
+})
 </script>
 
 <template>
