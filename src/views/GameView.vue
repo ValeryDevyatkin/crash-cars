@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import router from '@/router'
 import { useGameStore } from '@/stores/game-store'
-import { onMounted } from 'vue'
 
 const gameStore = useGameStore()
-
-onMounted(() => {
-  gameStore.generatePlayerOrders()
-})
 
 function goToActionCard() {
   gameStore.selectActionCard()
