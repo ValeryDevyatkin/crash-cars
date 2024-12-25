@@ -39,7 +39,7 @@ onMounted(() => {
     <YesNoConfirmation
       :is-confirmation="isPlayerOrderConfirmation"
       :no-click="() => switchPLayerOrderConfirmation(false)"
-      :yes-click="resetPlayerOrder"
+      :yes-click="() => resetPlayerOrder()"
     >
       <button @click="() => switchPLayerOrderConfirmation(true)">Порядок хода</button>
     </YesNoConfirmation>
@@ -51,7 +51,7 @@ onMounted(() => {
     <YesNoConfirmation
       :is-confirmation="isCrashConfirmation"
       :no-click="() => switchCrashConfirmation(false)"
-      :yes-click="goToActionCard"
+      :yes-click="() => goToActionCard()"
     >
       <button
         @click="() => switchCrashConfirmation(true)"
