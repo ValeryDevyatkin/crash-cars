@@ -11,14 +11,14 @@ type ActionCardProps = {
 function populateActionCards() {
   return [
     {
-      title: 'Колесо судьбы',
-      artText: 'Под него попадут все.',
+      title: 'Rock Of Ages',
+      artText: 'Still rollin.',
       actionText: [
         'Убери свою текущую машинку с поля - она считается упавшей.',
-        'Запусти колесо вместо машинки.',
-        'Потом убери колесо с поля.',
+        'Запусти валун вместо машинки.',
+        'Потом убери валун с поля.',
       ],
-      imageUrl: '/src/assets/action-cards/metal-disk.jpg',
+      imageUrl: '/src/assets/action-cards/rock.jpg',
     },
     {
       title: 'Не такой как все',
