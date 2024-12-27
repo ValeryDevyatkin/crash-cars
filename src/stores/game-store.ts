@@ -44,13 +44,13 @@ function populateActionCards() {
       title: 'Работа не волк',
       artText: 'Рабочий перепутал время и пришел подготавливать поле к игре.',
       actionText: ['Верни на поле все упавшие базовые препятствия.'],
-      imageUrl: '/src/assets/action-cards/road-worker.jpg',
+      imageUrl: '/src/assets/action-cards/worker.jpg',
     },
     {
       title: 'Машины в розыске',
       artText: 'Организаторы не смогли договориться с приемщиком автохлама.',
       actionText: ['Верни на поле все упавшие машинки.', 'Положи их вверх ногами.'],
-      imageUrl: '/src/assets/action-cards/breaking-law.jpg',
+      imageUrl: '/src/assets/action-cards/police.jpg',
     },
     {
       title: 'Хитрец',
